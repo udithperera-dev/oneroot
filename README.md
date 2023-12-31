@@ -17,7 +17,7 @@ To use this package, add oneroot as a dependency in your pubspec.yaml file.
 - On pubspeck.yaml
 
 ```
-oneroot: ^0.0.3
+oneroot: ^0.0.4
 ```
 
 - On Dart Import
@@ -34,7 +34,7 @@ final _onerootPlugin = Oneroot();
 String platformRootStatus = await _onerootPlugin.getRootChecker();
 
 //Method will return OS version.
-String platformRootStatus = await _onerootPlugin.getRootChecker();
+String platformVersion = await _onerootPlugin.getRootChecker();
 ```
 
 <table>
