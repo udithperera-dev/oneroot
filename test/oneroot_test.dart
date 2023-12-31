@@ -1,23 +1,33 @@
-import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:oneroot/oneroot.dart';
+import 'package:oneroot/oneroot_platform_interface.dart';
+import 'package:oneroot/oneroot_method_channel.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+
+class MockOnerootPlatform
+    with MockPlatformInterfaceMixin
+    implements OnerootPlatform {
+
+  @override
+  Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  Future<String?> getRootChecker() {
+    throw UnimplementedError();
+  }
+}
 
 void main() {
-  const MethodChannel channel = MethodChannel('oneroot');
+  final OnerootPlatform initialPlatform = OnerootPlatform.instance;
 
-  TestWidgetsFlutterBinding.ensureInitialized();
-
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
-
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
+  test('$MethodChannelOneroot is the default instance', () {
+    expect(initialPlatform, isInstanceOf<MethodChannelOneroot>());
   });
 
   test('getPlatformVersion', () async {
-    expect(await Oneroot.platformVersion, '42');
+    Oneroot onerootPlugin = Oneroot();
+    MockOnerootPlatform fakePlatform = MockOnerootPlatform();
+    OnerootPlatform.instance = fakePlatform;
+    expect(await onerootPlugin.getPlatformVersion(), '42');
   });
 }

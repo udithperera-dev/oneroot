@@ -9,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -17,6 +17,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
+  String _platformRootStatus = 'Unknown';
+  final _onerootPlugin = Oneroot();
 
   @override
   void initState() {
@@ -24,37 +26,52 @@ class _MyAppState extends State<MyApp> {
     initPlatformState();
   }
 
-  // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     String platformVersion;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
+    String platformRootStatus;
     try {
       platformVersion =
-          await Oneroot.platformVersion ?? 'Unknown platform version';
+          await _onerootPlugin.getPlatformVersion() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
 
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
+    try {
+      platformRootStatus =
+          await _onerootPlugin.getRootChecker() ?? 'NOT ROOTED';
+      if(platformRootStatus==''){platformRootStatus='NOT ROOTED';}
+    } on PlatformException {
+      platformRootStatus = 'Failed to get platform root status.';
+    }
+
     if (!mounted) return;
 
     setState(() {
       _platformVersion = platformVersion;
+      _platformRootStatus = platformRootStatus;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'One Picker',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        primaryColor: Colors.green,
+      ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('One Root'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Running on: $_platformVersion\n'),
+              Text('Root Status: $_platformRootStatus\n')
+            ],
+          ),
         ),
       ),
     );
