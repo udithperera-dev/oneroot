@@ -29,8 +29,10 @@ import 'package:oneroot/oneroot.dart';
 - On implementation of Root Detection
 
 ```
-//Method will return "ROOTED" as a string value, if your are running on rooted environment.
+//init plugin object
 final _onerootPlugin = Oneroot();
+
+//Method will return "ROOTED" as a string value, if your are running on rooted environment.
 String platformRootStatus = await _onerootPlugin.getRootChecker();
 
 //Method will return OS version.
