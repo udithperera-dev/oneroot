@@ -39,9 +39,8 @@ String platformRootStatus = await _onerootPlugin.getRootChecker();
     <td>One Root - IOS JailBreak Detection</td>
   </tr>
   <tr>
-    <td width="30%"><img src="https://github.com/udithperera-dev/onepicker/raw/da699e52551ccc39f7775bf55679d7139a7cedc9/ss_date_picker_01.png" alt="date-picker" style="width:150px;"/></td>
-    <td width="30%"><img src="https://github.com/udithperera-dev/onepicker/raw/6d3256556bcde588cc10e1fae84b42a13ea21d6a/ss_date_range_picker_02.png" alt="date-range-picker" style="width:150px;"/></td>
-    <td width="30%"><img src="https://github.com/udithperera-dev/onepicker/raw/da699e52551ccc39f7775bf55679d7139a7cedc9/ss_date_picker_01.png" style="width:150px;"></td>
+    <td width="30%"><img src="https://github.com/udithperera-dev/oneroot/blob/main/on_android.png" alt="date-picker" style="width:150px;"/></td>
+    <td width="30%"><img src="https://github.com/udithperera-dev/oneroot/blob/main/on_android.png" alt="date-picker" style="width:150px;"/></td>
   </tr>
  </table>
 
