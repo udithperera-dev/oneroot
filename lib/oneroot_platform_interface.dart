@@ -3,7 +3,6 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'oneroot_method_channel.dart';
 
 abstract class OnerootPlatform extends PlatformInterface {
-
   OnerootPlatform() : super(token: _token);
 
   static final Object _token = Object();

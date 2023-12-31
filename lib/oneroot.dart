@@ -1,4 +1,3 @@
-
 import 'oneroot_platform_interface.dart';
 
 class Oneroot {

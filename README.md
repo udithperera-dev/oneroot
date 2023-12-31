@@ -32,6 +32,9 @@ import 'package:oneroot/oneroot.dart';
 //Method will return "ROOTED" as a string value, if your are running on rooted environment.
 final _onerootPlugin = Oneroot();
 String platformRootStatus = await _onerootPlugin.getRootChecker();
+
+//Method will return OS version.
+String platformRootStatus = await _onerootPlugin.getRootChecker();
 ```
 
 <table>
