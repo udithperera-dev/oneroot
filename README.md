@@ -17,7 +17,7 @@ To use this package, add oneroot as a dependency in your pubspec.yaml file.
 - On pubspeck.yaml
 
 ```
-oneroot: ^0.0.2
+oneroot: ^0.0.3
 ```
 
 - On Dart Import
@@ -27,9 +27,9 @@ import 'package:oneroot/oneroot.dart';
 ```
 
 - On implementation of Root Detection
-Method "getRootChecker()" will return "ROOTED" as a string value, if your are running on rooted environment.
 
 ```
+//Method will return "ROOTED" as a string value, if your are running on rooted environment.
 final _onerootPlugin = Oneroot();
 String platformRootStatus = await _onerootPlugin.getRootChecker();
 ```
