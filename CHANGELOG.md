@@ -21,3 +21,8 @@
 * ## 0.0.6
 
 * Doc update.
+
+
+* ## 0.0.7
+
+* fix added for wrong root detection issue for below android 9.
