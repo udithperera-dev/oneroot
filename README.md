@@ -47,7 +47,7 @@ final _onerootPlugin = Oneroot();
 String platformRootStatus = await _onerootPlugin.getRootChecker();
 
 //Method will return the OS version.
-String platformVersion = await _onerootPlugin.getRootChecker();
+String platformVersion = await _onerootPlugin.getPlatformVersion();
 ```
 
 <table>
