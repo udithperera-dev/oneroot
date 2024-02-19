@@ -242,14 +242,18 @@ public class OneRoot {
     }
 
     public boolean checkForMagiskNative() {
-        if (!canLoadNativeLibrary()){
-            return false;
-        }
-        Phaser rootBeerNative = new Phaser();
-        try {
-            rootBeerNative.setLogDebugMessages(loggingEnabled);
-            return rootBeerNative.checkForMagiskUDS() > 0;
-        } catch (UnsatisfiedLinkError e) {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            if (!canLoadNativeLibrary()){
+                return false;
+            }
+            KValidatorNative rootBeerNative = new KValidatorNative();
+            try {
+                rootBeerNative.setLogDebugMessages(loggingEnabled);
+                return rootBeerNative.checkForMagiskUDS() > 0;
+            } catch (UnsatisfiedLinkError e) {
+                return false;
+            }
+        }else{
             return false;
         }
     }
