@@ -1,4 +1,4 @@
-# <img src="https://github.com/udithperera-dev/oneroot/blob/3ce4fee6481c7dac6b60fe49dd0addc9ae8e3c3c/logo.png" width="50px" alt="logo" align="center" style="border-radius:50%"> oneroot
+# <img src="https://raw.githubusercontent.com/udithperera-dev/oneroot/e44f9473e69bd669c047d54abdb276d9babc4cdd/logo.png" width="50px" alt="logo" align="center" style="border-radius:50%"> oneroot
 
 Introducing our innovative root & jailbreak detection plugin called OneRoot, a powerful tool that allows you to check the part of your device security.
 #### As per the [<img src="https://mas.owasp.org/assets/logo_circle.png" width="25px" alt="logo" align="center"> OWAPS](https://mas.owasp.org) standard, we have to create a way for programmatic detection.
@@ -83,7 +83,7 @@ String platformVersion = await _onerootPlugin.getPlatformVersion();
   - [Akurupela Applications](https://akurupela.com)
 
 <p align="center">
-      <img src="https://github.com/udithperera-dev/oneroot/blob/3ce4fee6481c7dac6b60fe49dd0addc9ae8e3c3c/logo.png" width="25px" alt="logo" align="center">
+      <img src="https://raw.githubusercontent.com/udithperera-dev/oneroot/e44f9473e69bd669c047d54abdb276d9babc4cdd/logo.png" width="25px" alt="logo" align="center">
       <img src="https://www.akurupela.com/assets/images/images_info/ap_logo.png" width="25px" alt="logo" align="center">
       <img src="https://storage.googleapis.com/cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="100px" alt="logo" align="center">
       <img src="https://pub.dev/static/hash-tihrt5d6/img/pub-dev-logo.svg" width="100px" alt="logo" align="center">
