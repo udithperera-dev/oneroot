@@ -1,3 +1,7 @@
+## 0.0.9
+
+* Doc update.
+
 ## 0.0.8
 
 * ios fixes.
