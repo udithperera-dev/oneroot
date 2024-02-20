@@ -1,6 +1,6 @@
 name: oneroot
 description: Introducing our innovative root & jailbreak detection plugin called OneRoot, a powerful tool that allows you to check the part of your device security.
-version: 0.0.9
+version: 0.1.0
 homepage: https://github.com/udithperera-dev/oneroot
 
 environment:
