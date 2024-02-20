@@ -21,12 +21,11 @@ Introducing our innovative root & jailbreak detection plugin called OneRoot, a p
       <li> <sub>Checking Tracer pid</sub></li>
     </td>
     <td width="30%" style="text-align: center;" align="left" valign="top">
-       <li> <sub>Hardware Security</sub></li>
-       <li> <sub>Secure Boot</sub></li>
-       <li> <sub>Code Signing</sub></li>
-       <li> <sub>Sandbox</sub></li>
-       <li> <sub>Encryption and Data Protection</sub></li>
-       <li> <sub>General Exploit Mitigations</sub></li>
+       <li> <sub>File-based Checks</sub></li>
+       <li> <sub>Checking File Permissions</sub></li>
+       <li> <sub>Checking Protocol Handlers</sub></li>
+       <li> <sub>Frida Detection</sub></li>
+       <li> <sub>Emulator Detection</sub></li>
     </td>
   </tr>
  </table>
