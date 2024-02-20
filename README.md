@@ -1,4 +1,4 @@
-# oneroot
+# <img src="https://mas.owasp.org/assets/logo_circle.png" width="25px" alt="logo" align="center"> oneroot
 
 Introducing our innovative root & jailbreak detection plugin called OneRoot, a powerful tool that allows you to check the part of your device security.
 #### As per the [<img src="https://mas.owasp.org/assets/logo_circle.png" width="25px" alt="logo" align="center"> OWAPS](https://mas.owasp.org) standard, we have to create a way for programmatic detection.
