@@ -12,6 +12,8 @@ public class OnerootPlugin: NSObject, FlutterPlugin {
     switch call.method {
     case "getPlatformVersion":
       result("iOS " + UIDevice.current.systemVersion)
+    case "getRootChecker":
+       result(""+OneRoot.isJailbroken)
     default:
       result(FlutterMethodNotImplemented)
     }
