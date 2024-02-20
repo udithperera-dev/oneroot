@@ -3,20 +3,37 @@
 Introducing our innovative root & jailbreak detection plugin called OneRoot, a powerful tool that allows you to check the part of your device security.
 #### As per the [<img src="https://mas.owasp.org/assets/logo_circle.png" width="25px" alt="logo" align="center"> OWAPS](https://mas.owasp.org) standard, we have to create a way for programmatic detection.
 
-* File Existence Checks
-* Executing Su And Other Commands
-* Checking Running Processes
-* Checking Installed App Packages
-* Checking For Writable Partitions And System Directories
-* Checking The Debuggable Flag In Application info
-* Timer Checks
-* Messing With Jdwp Related Data structures
-* Checking Tracer pid
+<table>
+  <tr>
+    <td>Android</td>
+    <td>IOS</td>
+  </tr>
+  <tr>
+    <td width="30%" style="text-align: left;" align="left" valign="top">
+      <li> <sub>File Existence Checks</sub></li>
+      <li> <sub>Executing Su And Other Commands</sub></li>
+      <li> <sub>Checking Running Processes</sub></li>
+      <li> <sub>Checking Installed App Packages</sub></li>
+      <li> <sub>Checking For Writable Partitions And System Directories</sub></li>
+      <li> <sub>Checking The Debuggable Flag In Application info</sub></li>
+      <li> <sub>Timer Checks</sub></li>
+      <li> <sub>Messing With Jdwp Related Data structures</sub></li>
+      <li> <sub>Checking Tracer pid</sub></li>
+    </td>
+    <td width="30%" style="text-align: center;" align="left" valign="top">
+       <li> <sub>File-based Checks</sub></li>
+       <li> <sub>Checking File Permissions</sub></li>
+       <li> <sub>Checking Protocol Handlers</sub></li>
+       <li> <sub>Frida Detection</sub></li>
+       <li> <sub>Emulator Detection</sub></li>
+    </td>
+  </tr>
+ </table>
 
 ## Features
 
 - Android Root Detection
-- IOS JailBreak Detection (coming soon)
+- IOS JailBreak Detection
 
 
 ## Getting started
@@ -28,7 +45,7 @@ To use this package, add oneroot as a dependency in your pubspec.yaml file.
 - On pubspeck.yaml
 
 ```
-oneroot: ^0.0.6
+oneroot: ^0.0.7
 ```
 
 - On Dart Import
@@ -47,7 +64,7 @@ final _onerootPlugin = Oneroot();
 String platformRootStatus = await _onerootPlugin.getRootChecker();
 
 //Method will return the OS version.
-String platformVersion = await _onerootPlugin.getRootChecker();
+String platformVersion = await _onerootPlugin.getPlatformVersion();
 ```
 
 <table>

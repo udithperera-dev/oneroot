@@ -1,28 +1,27 @@
-## 0.0.1
+## 0.0.7
 
-* initial release.
+* fix added for wrong root detection issue for below android 9.
 
-* ## 0.0.2
-
-* initial update.
-
-* ## 0.0.3
-
-* initial updates.
-
-* ## 0.0.4
-
-* initial updates.
-
-* ## 0.0.5
-
-* initial updates.
-
-* ## 0.0.6
+## 0.0.6
 
 * Doc update.
 
+## 0.0.5
 
-* ## 0.0.7
+* initial updates.
 
-* fix added for wrong root detection issue for below android 9.
+## 0.0.4
+
+* initial updates.
+
+## 0.0.3
+
+* initial updates.
+
+## 0.0.2
+
+* initial update.
+
+## 0.0.1
+
+* initial release.
