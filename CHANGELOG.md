@@ -1,3 +1,7 @@
+## 0.0.8
+
+* ios fixes.
+
 ## 0.0.7
 
 * fix added for wrong root detection issue for below android 9.
