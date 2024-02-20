@@ -3,15 +3,33 @@
 Introducing our innovative root & jailbreak detection plugin called OneRoot, a powerful tool that allows you to check the part of your device security.
 #### As per the [<img src="https://mas.owasp.org/assets/logo_circle.png" width="25px" alt="logo" align="center"> OWAPS](https://mas.owasp.org) standard, we have to create a way for programmatic detection.
 
-* File Existence Checks
-* Executing Su And Other Commands
-* Checking Running Processes
-* Checking Installed App Packages
-* Checking For Writable Partitions And System Directories
-* Checking The Debuggable Flag In Application info
-* Timer Checks
-* Messing With Jdwp Related Data structures
-* Checking Tracer pid
+<table>
+  <tr>
+    <td>Android</td>
+    <td>IOS</td>
+  </tr>
+  <tr>
+    <td width="30%" style="text-align: left;" align="left" valign="top">
+      <li> <sub>File Existence Checks</sub></li>
+      <li> <sub>Executing Su And Other Commands</sub></li>
+      <li> <sub>Checking Running Processes</sub></li>
+      <li> <sub>Checking Installed App Packages</sub></li>
+      <li> <sub>Checking For Writable Partitions And System Directories</sub></li>
+      <li> <sub>Checking The Debuggable Flag In Application info</sub></li>
+      <li> <sub>Timer Checks</sub></li>
+      <li> <sub>Messing With Jdwp Related Data structures</sub></li>
+      <li> <sub>Checking Tracer pid</sub></li>
+    </td>
+    <td width="30%" style="text-align: center;" align="left" valign="top">
+       <li> <sub>Hardware Security</sub></li>
+       <li> <sub>Secure Boot</sub></li>
+       <li> <sub>Code Signing</sub></li>
+       <li> <sub>Sandbox</sub></li>
+       <li> <sub>Encryption and Data Protection</sub></li>
+       <li> <sub>General Exploit Mitigations</sub></li>
+    </td>
+  </tr>
+ </table>
 
 ## Features
 
