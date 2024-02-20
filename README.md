@@ -1,4 +1,4 @@
-# oneroot
+# <img src="https://mas.owasp.org/assets/logo_circle.png" width="25px" alt="logo" align="center"> oneroot
 
 Introducing our innovative root & jailbreak detection plugin called OneRoot, a powerful tool that allows you to check the part of your device security.
 #### As per the [<img src="https://mas.owasp.org/assets/logo_circle.png" width="25px" alt="logo" align="center"> OWAPS](https://mas.owasp.org) standard, we have to create a way for programmatic detection.
@@ -73,8 +73,8 @@ String platformVersion = await _onerootPlugin.getPlatformVersion();
     <td>One Root - IOS JailBreak Detection</td>
   </tr>
   <tr>
-    <td width="30%" style="text-align: center;"><img src="https://github.com/udithperera-dev/oneroot/raw/d27a4354c1438602856b2acf6a2e210e19b56cf5/on_android.png" alt="root" style="width:250px;"/></td>
-    <td width="30%" style="text-align: center;"> Coming Soon</td>
+    <td width="30%" style="text-align: center;" align="left" valign="top"><img src="https://github.com/udithperera-dev/oneroot/raw/d27a4354c1438602856b2acf6a2e210e19b56cf5/on_android.png" alt="root" style="width:250px;"/></td>
+    <td width="30%" style="text-align: center;" align="left" valign="top"><img src="https://github.com/udithperera-dev/oneroot/blob/6906a0aa1e419ee47af21061ffc39546f643be31/on_ios.png" alt="root" style="width:250px;"/></td>
   </tr>
  </table>
 
