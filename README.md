@@ -74,7 +74,7 @@ String platformVersion = await _onerootPlugin.getPlatformVersion();
   </tr>
   <tr>
     <td width="30%" style="text-align: center;" align="left" valign="top"><img src="https://github.com/udithperera-dev/oneroot/raw/d27a4354c1438602856b2acf6a2e210e19b56cf5/on_android.png" alt="root" style="width:250px;"/></td>
-    <td width="30%" style="text-align: center;" align="left" valign="top"><img src="https://raw.githubusercontent.com/udithperera-dev/oneroot/main/on_ios.png" alt="root" style="width:250px;"/></td>
+    <td width="30%" style="text-align: center;" align="left" valign="top"><img src="https://github.com/udithperera-dev/oneroot/blob/6906a0aa1e419ee47af21061ffc39546f643be31/on_ios.png" alt="root" style="width:250px;"/></td>
   </tr>
  </table>
 
