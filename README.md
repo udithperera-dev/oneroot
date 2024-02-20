@@ -33,7 +33,7 @@ Introducing our innovative root & jailbreak detection plugin called OneRoot, a p
 ## Features
 
 - Android Root Detection
-- IOS JailBreak Detection (coming soon)
+- IOS JailBreak Detection
 
 
 ## Getting started
@@ -64,7 +64,7 @@ final _onerootPlugin = Oneroot();
 String platformRootStatus = await _onerootPlugin.getRootChecker();
 
 //Method will return the OS version.
-String platformVersion = await _onerootPlugin.getRootChecker();
+String platformVersion = await _onerootPlugin.getPlatformVersion();
 ```
 
 <table>
