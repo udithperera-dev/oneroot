@@ -1,6 +1,5 @@
 import 'oneroot_platform_interface.dart';
 
-
 /// {@template method_oneroot}
 /// Oneroot is end point for plugin user.
 /// {@endtemplate}

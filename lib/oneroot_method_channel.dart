@@ -7,7 +7,6 @@ import 'oneroot_platform_interface.dart';
 /// MethodChannelOneroot is derived from OnerootPlatform interface.
 /// {@endtemplate}
 class MethodChannelOneroot extends OnerootPlatform {
-
   ///init ther interface channel
   @visibleForTesting
   final methodChannel = const MethodChannel('oneroot');

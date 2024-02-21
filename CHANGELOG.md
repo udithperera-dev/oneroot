@@ -1,3 +1,7 @@
+## 0.1.2
+
+* Doc update.
+
 ## 0.1.1
 
 * Doc update.
