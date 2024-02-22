@@ -44,19 +44,19 @@ To use this package, add oneroot as a dependency in your pubspec.yaml file.
 
 - On pubspeck.yaml
 
-```
+```yaml
 oneroot: ^0.1.2
 ```
 
 - On Dart Import
 
-```
+```dart
 import 'package:oneroot/oneroot.dart';
 ```
 
 - On implementation of Root Detection
 
-```
+```dart
 //init plugin object
 final _onerootPlugin = Oneroot();
 
