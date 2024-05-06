@@ -246,10 +246,10 @@ public class OneRoot {
             if (!canLoadNativeLibrary()){
                 return false;
             }
-            KValidatorNative rootBeerNative = new KValidatorNative();
+            Phaser phaser = new Phaser();
             try {
-                rootBeerNative.setLogDebugMessages(loggingEnabled);
-                return rootBeerNative.checkForMagiskUDS() > 0;
+                phaser.setLogDebugMessages(loggingEnabled);
+                return phaser.checkForMagiskUDS() > 0;
             } catch (UnsatisfiedLinkError e) {
                 return false;
             }
