@@ -243,18 +243,18 @@ public class OneRoot {
     }
 
     public boolean checkForMagiskNative() {
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            if (!canLoadNativeLibrary()){
-                return false;
-            }
-            Phaser phaser = new Phaser();
-            try {
-                phaser.setLogDebugMessages(loggingEnabled);
-                return phaser.checkForMagiskUDS() > 0;
-            } catch (UnsatisfiedLinkError e) {
-                return false;
-            }
-        }else{
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                if (!canLoadNativeLibrary()){
+                    return false;
+                }
+                Phaser phaser = new Phaser();
+                try {
+                    phaser.setLogDebugMessages(loggingEnabled);
+                    return phaser.checkForMagiskUDS() > 0;
+                } catch (UnsatisfiedLinkError e) {
+                    return false;
+                }
+        } else {
             return false;
         }
     }
